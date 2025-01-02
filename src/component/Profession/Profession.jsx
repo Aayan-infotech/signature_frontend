@@ -7,7 +7,7 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import image1 from "./images/image1.jpeg";
+import image1 from "./images/image1.jpg";
 import image2 from "./images/image2.png";
 import image3 from "./images/image3.jpg";
 import easy from "./images/easy3.png";

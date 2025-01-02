@@ -147,7 +147,7 @@ function LandingPage() {
 
   useEffect(() => {
     fetchFeedbackData();
-  }, [feedbackData]);
+  }, []);
   const animateValue = (setter, start, end, duration) => {
     const range = end - start;
     const stepTime = Math.abs(Math.floor(duration / range));

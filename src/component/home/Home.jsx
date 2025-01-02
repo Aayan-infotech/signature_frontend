@@ -161,7 +161,7 @@ function Home() {
         {/* 4th section */}
         <section className='Home4'>
           <h2 className='home4-head'>Create and manage the email <span>Signature? </span> you need</h2>
-          <p className='section4_para'>WiseStamp provides a seamless solution for managing your email signatures across your organization, ensuring every email strengthens your brand and maximizes your marketing potential.</p>
+          <p className='section4_para'>Signature provides a seamless solution for managing your email signatures across your organization, ensuring every email strengthens your brand and maximizes your marketing potential.</p>
         </section>
 
         {/* 5th section */}

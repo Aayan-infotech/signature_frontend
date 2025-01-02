@@ -28,12 +28,12 @@ const data = [
     section: {
       title: "Consistent branding across all emails",
       description:
-        "Maintain a consistent image and build your institution’s reputation. WiseStamp makes sure all email signatures in your organization are always up-to-date, with no tampering by individual staff members.",
+        "Maintain a consistent image and build your institution’s reputation. Signature makes sure all email signatures in your organization are always up-to-date, with no tampering by individual staff members.",
       steps: [
         {
           heading: "Easy to create, simple to manage",
           description:
-            "Design and set up university-wide signatures in minutes using a central dashboard. WiseStamp doesn’t require any technical knowledge or IT assistance to manage. Compatible with Google Workspace or Office 365.",
+            "Design and set up university-wide signatures in minutes using a central dashboard. Signature doesn’t require any technical knowledge or IT assistance to manage. Compatible with Google Workspace or Office 365.",
           image: easy1,
         },
         {
@@ -101,7 +101,7 @@ const data = [
         {
           heading: "Streamlined email signature management",
           description:
-            "You want your email signature solution to be as automated and efficient as any other software in your inventory. WiseStamp’s unified dashboard, fast onboarding, smart campaign management, and advanced tracking mean everything is right there at your fingertips. ",
+            "You want your email signature solution to be as automated and efficient as any other software in your inventory. Signature unified dashboard, fast onboarding, smart campaign management, and advanced tracking mean everything is right there at your fingertips. ",
           image: easy8,
         },
         {

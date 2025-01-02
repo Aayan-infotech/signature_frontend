@@ -102,7 +102,7 @@ const data = [
             heading:
               "Learn from what others in your professions use as their signature",
             description:
-              "Take a peek at a few signature examples based on what our users (doctors like you) actually use. If you like any of these email signature template samples you can easily generate one with Wisestamp email Signature Creator.",
+              "Take a peek at a few signature examples based on what our users (doctors like you) actually use. If you like any of these email signature template samples you can easily generate one with Signature email Signature Creator.",
             stepImg: Profession3,
           },
         ],

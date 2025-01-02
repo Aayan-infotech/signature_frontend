@@ -95,15 +95,19 @@ const Header = () => {
                       <h3>By Industry</h3>
                       <ul className="list-unstyled ">
                         <li>
-                          <Link to="/Industry">
+                          <Link to="/Industry/Education Facilities">
                             Education Facilities
                           </Link>
                         </li>
                         <li>
-                          <Link to="/Industry">Real Estate Agent</Link>
+                          <Link to="/Industry/Real Estate Agent">
+                            Real Estate Agent
+                          </Link>
                         </li>
                         <li>
-                          <Link to="/Industry">Saas Companies</Link>
+                          <Link to="/Industry/Saas Companies">
+                            Saas Companies
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -111,10 +115,12 @@ const Header = () => {
                       <h3>By Profession</h3>
                       <ul className="list-unstyled ">
                         <li>
-                          <Link to="/Profession">CEO & Excecutives</Link>
+                          <Link to="/Profession/CEO & Excecutives">
+                            CEO & Excecutives
+                          </Link>
                         </li>
                         <li>
-                          <Link to="/Profession">Doctors</Link>
+                          <Link to="/Profession/Doctors">Doctors</Link>
                         </li>
                       </ul>
                     </div>
@@ -293,13 +299,17 @@ const Header = () => {
                   <span>By Industry</span>
                   <ul className="list-unstyled ">
                     <li>
-                      <Link to="/Industry">Education Facilities</Link>
+                      <Link to="/Industry/Education Facilities">
+                        Education Facilities
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/Industry">Real Estate Agent</Link>
+                      <Link to="/Industry/Real Estate Agent">
+                        Real Estate Agent
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/Industry">Saas Companies</Link>
+                      <Link to="/Industry/Saas Companies">Saas Companies</Link>
                     </li>
                   </ul>
                 </NavDropdown.Item>
@@ -307,10 +317,12 @@ const Header = () => {
                   <span>By Profession</span>
                   <ul className="list-unstyled ">
                     <li>
-                      <Link to="/Profession">CEO & Excecutives</Link>
+                      <Link to="/Profession/CEO & Excecutives">
+                        CEO & Excecutives
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/Profession">Doctors</Link>
+                      <Link to="/Profession/Doctors">Doctors</Link>
                     </li>
                   </ul>
                 </NavDropdown.Item>

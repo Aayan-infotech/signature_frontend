@@ -169,7 +169,7 @@ function LandingPage() {
     animateValue(setCategories, 50, 99, 1000); // 2 seconds for 99
   }, []);
 
-  console.log(feedbackData);
+  // console.log(feedbackData);
   
 
   return (
@@ -266,7 +266,7 @@ function LandingPage() {
                 by designers
               </p>
               <button className="landingpage3-button2">
-                <Link to="/Page" className="text-decoration-none text-light">
+                <Link to="/SignIn" className="text-decoration-none text-light">
                   Show More
                 </Link>
               </button>

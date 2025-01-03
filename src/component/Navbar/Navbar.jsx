@@ -60,6 +60,10 @@ const Header = () => {
   const handleOffcanvasToggle = () => setShowOffcanvas(!showOffcanvas);
   const handleOffcanvasClose = () => setShowOffcanvas(false);
 
+  const handleAuth = async () => {
+    
+  };
+
   return (
     <>
       <Navbar collapseOnSelect expand="lg" className="" sticky="top">

@@ -38,8 +38,8 @@ function Signin() {
           // Save the token to local storage or context
           localStorage.setItem("token", data.token);
           // Redirect to the desired page on a different port
-          window.location.replace(`http://44.196.64.110:2001/?token=${encodeURIComponent(data.token)}`);
-          // window.location.replace(`/?token=${encodeURIComponent(data.token)}`);
+          // window.location.replace(`http://44.196.64.110:2001/?token=${encodeURIComponent(data.token)}`);
+          window.location.replace(`http://localhost:3000/details/?token=${encodeURIComponent(data.token)}`);
         } else {
           setErrorMessage(
             data.message || "Login failed. Please check your credentials."

@@ -3,7 +3,7 @@ import "./SignUp.scss";
 import SignIn from "./images/SignIn.png";
 import { Link, useNavigate } from "react-router-dom";
 import { FaGoogle, FaFacebook } from "react-icons/fa";
-import { GoogleOAuthProvider, GoogleLogin   } from "@react-oauth/google";
+import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import axios from "axios";
 
 function SignUp() {
@@ -27,22 +27,26 @@ function SignUp() {
     }
 
     try {
-      const response = await fetch(
-        "http://44.196.64.110:9006/api/auth/register",
+      const response = await axios.post(
+        "http://localhost:9006/api/auth/register",
         {
-          method: "POST",
+          email,
+          password,
+          confirmPassword,
+        },
+        {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email, password, confirmPassword }),
         }
       );
 
-      const data = await response.json();
+      const data = response.data; // Directly access response.data
+      console.log(data);
 
-      if (data.sucess) {
+      if (data) {
         setSuccessMessage("User registered successfully");
-        navigate("/SignIn"); // Updated
+        navigate("/SignIn");
       } else {
         setErrorMessage(data.message);
       }
@@ -132,19 +136,17 @@ function SignUp() {
                 <div className="social-icons">
                   {/* <FaFacebook className="icon facebook" />
                   <FaGoogle className="icon google" /> */}
-                  <div 
-                //   className="icon google"
+                  <div
+                  //   className="icon google"
                   >
-                  <GoogleLogin
-                   text="signin"
-                  
-                    onSuccess={handleLoginGoogle}
-                    onError={() => {
-                      console.log("Login Failed");
-                    }}
-                  />
+                    <GoogleLogin
+                      text="signin"
+                      onSuccess={handleLoginGoogle}
+                      onError={() => {
+                        console.log("Login Failed");
+                      }}
+                    />
                   </div>
-                
                 </div>
               </div>
               <div className="links">

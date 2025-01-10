@@ -28,7 +28,7 @@ function SignUp() {
 
     try {
       const response = await axios.post(
-        "http://localhost:9006/api/auth/register",
+        "http://44.196.64.110:9006/api/auth/register",
         {
           email,
           password,

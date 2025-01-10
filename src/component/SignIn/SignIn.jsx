@@ -21,7 +21,7 @@ function Signin() {
     setSuccessMessage("");
 
     try {
-      const response = await fetch("http://localhost:9006/api/auth/login", {
+      const response = await fetch("http://44.196.64.110:9006/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,13 +33,8 @@ function Signin() {
       if (response.ok) {
         if (data) {
           setSuccessMessage("Login successful!");
-          console.log("data" , data);
-          
-          // Save the token to local storage or context
           localStorage.setItem("token", data.token);
-          // Redirect to the desired page on a different port
-          // window.location.replace(`http://44.196.64.110:2001/?token=${encodeURIComponent(data.token)}`);
-          window.location.replace(`http://localhost:3000/details/?token=${encodeURIComponent(data.token)}`);
+          window.location.replace(`http://44.196.64.110:3000/details/?token=${encodeURIComponent(data.token)}`);
         } else {
           setErrorMessage(
             data.message || "Login failed. Please check your credentials."
@@ -59,9 +54,6 @@ function Signin() {
   const handleLoginGoogle = async (credentialResponse) => {
     try {
       const { credential } = credentialResponse;
-      console.log(credential);
-
-      // Send the credential to the backend
       const res = await axios.post(
         "http://44.196.64.110:9006/api/passport/google-login",
         {
@@ -72,15 +64,11 @@ function Signin() {
 
       setUser(res.data.user);
       setToken(res.data.token);
-      //   setToastMessage("Google login successful!");
-      //   setToastType("success");
       setTimeout(() => {
         navigate("/");
       }, 2000);
     } catch (error) {
       console.error("Google login failed:", error);
-      //   setToastMessage("Google login failed!");
-      //   setToastType("error");
     }
   };
 

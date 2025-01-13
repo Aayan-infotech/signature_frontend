@@ -8,7 +8,6 @@ import Footer from "../Footer/Footer";
 // import data from "./industry.json";
 import { useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import easy1 from "./images/ease1.gif";
 import easy2 from "./images/ease2.webp";
 import easy3 from "./images/easy3.png";
 import easy4 from "./images/easy4.webp";
@@ -17,6 +16,8 @@ import easy6 from "./images/easy6.gif";
 import easy7 from "./images/easy7.gif";
 import easy8 from "./images/easy8.png";
 import easy9 from "./images/easy9.webp";
+import gmailsix from "./images/gmail-head-6.png";
+import gmailseven from "./images/gmail-head-7.png";
 
 const data = [
   {
@@ -24,7 +25,7 @@ const data = [
     heading: "Email signature management solution for schools & universities",
     description:
       "Maintain consistent email signatures across all departments and faculties in your educational institution.",
-    image: easy1,
+    image: gmailsix,
     section: {
       title: "Consistent branding across all emails",
       description:
@@ -34,7 +35,7 @@ const data = [
           heading: "Easy to create, simple to manage",
           description:
             "Design and set up university-wide signatures in minutes using a central dashboard. Signature doesn’t require any technical knowledge or IT assistance to manage. Compatible with Google Workspace or Office 365.",
-          image: easy1,
+          image: gmailsix,
         },
         {
           heading: "Create the best signature for each department",
@@ -45,7 +46,7 @@ const data = [
             "Provide department-based access",
             "Show off badges & certifications",
           ],
-          image: easy2,
+          image: gmailseven,
         },
       ],
     },
@@ -102,7 +103,7 @@ const data = [
           heading: "Streamlined email signature management",
           description:
             "You want your email signature solution to be as automated and efficient as any other software in your inventory. Signature unified dashboard, fast onboarding, smart campaign management, and advanced tracking mean everything is right there at your fingertips. ",
-          image: easy8,
+          image: gmailsix,
         },
         {
           heading: "Your new billboard",

@@ -111,6 +111,58 @@ function Listing_updates() {
       title: "Email Sign Off",
       description:
         "Get a beautiful Gmail email signature that makes an impression. Browse Gmail signature templates, learn tips, and easily generate your signature in 2 minutes.",
+      data: {
+        heading: "Email Sign-Offs",
+        description:
+          "A well-crafted sign-off leaves a lasting impression. Whether you aim to be formal, friendly, or somewhere in between, choosing the right sign-off can set the tone for your message. Here are some common and creative email sign-off ideas to consider:",
+        listData: [
+          {
+            head: "Formal Sign-Offs",
+            data: [
+              " A professional and polite way to close an email.",
+              "Classic and respectful, ideal for business correspondence.",
+              "Traditional and formal, suitable for official letters.",
+              "Demonstrates deference, great for formal or hierarchical relationships.",
+            ],
+          },
+          {
+            head: "Friendly Sign-Offs",
+            data: [
+              " Casual and friendly, perfect for informal emails.",
+              "Simple and effective, especially if you're requesting something.",
+              "Warm and caring, a good option for friends and colleagues.",
+              "A balance between formal and friendly, suitable for most situations.",
+            ],
+          },
+          {
+            head: "Creative Sign-Offs",
+            data: [
+              " Fun and energetic, great for creative industries.",
+              "Casual and relaxed, ideal for informal conversations.",
+              "Motivational and upbeat, good for positive messaging.",
+              "Cool and edgy, perfect for creative or entertainment sectors.",
+            ],
+          },
+          {
+            head: "Inspirational Sign-Offs",
+            data: [
+              " Encouraging and supportive, perfect for a professional tone.",
+              "Motivational, implying a positive outlook.",
+              "Inspirational and encouraging, great for startup and innovation contexts",
+              "Simple and caring, ideal for healthcare or wellness industries.",
+            ],
+          },
+          {
+            head: "Situational Sign-Offs",
+            data: [
+              " Engages the recipient, encourages a response.",
+              "Casual, implies you’ll be in touch again shortly.",
+              "Timely and considerate, shows thoughtfulness.",
+              "Simple and caring, ideal for healthcare or wellness industries.",
+            ],
+          },
+        ],
+      },
       image: [
         {
           url: `${template13}`,
@@ -134,6 +186,39 @@ function Listing_updates() {
       title: "Email Signature Banner",
       description:
         "Get a beautiful Gmail email signature that makes an impression. Browse Gmail signature templates, learn tips, and easily generate your signature in 2 minutes.",
+      data: {
+        heading: "Email Signature Banners: Stand Out with Every Email",
+        description:
+          "Boost your brand identity and make a lasting impression with our custom email signature banners. Whether you're promoting a new product, sharing important updates, or simply enhancing your professional image, a well-designed banner can transform your email signature into a powerful marketing tool.",
+        listData: [
+          {
+            head: "Why Use an Email Signature Banner?",
+            data: [
+              " Keep your brand top of mind with every email you send.",
+              " A cohesive and visually appealing signature adds professionalism to your communication.",
+              "Showcase your latest offers, events, or announcements directly in your emails.",
+              "Drive traffic to your website, social media pages, or special promotions with integrated links.",
+            ],
+          },
+          {
+            head: "Features of Our Email Signature Banners",
+            data: [
+              " Tailored to your brand’s identity and messaging needs.",
+              "Looks great on all devices, ensuring a seamless experience for recipients.",
+              "Simple to add to your existing email signature with step-by-step guides.",
+              "Keep your content fresh and relevant with easily editable banners.",
+            ],
+          },
+          {
+            head: "How It Works",
+            data: [
+              " Choose a Template or start from scratch with our intuitive banner editor.",
+              "Customize Your Design with logos, colors, and text that match your brand.",
+              "Download and Implement your new banner in minutes.",
+            ],
+          },
+        ],
+      },
       image: [
         {
           url: `${template17}`,
@@ -157,6 +242,36 @@ function Listing_updates() {
       title: "Handwriteen Signatures",
       description:
         "Get a beautiful Gmail email signature that makes an impression. Browse Gmail signature templates, learn tips, and easily generate your signature in 2 minutes.",
+      data: {
+        heading: "Add a Personal Touch to Your Emails",
+        description:
+          "Transform your email signature with a personalized handwritten signature. Whether you're aiming for a touch of elegance or a casual vibe, a handwritten signature can set you apart and make your emails more memorable. Here's what makes our handwritten signature feature special:",
+        listData: [
+          {
+            data: [
+              " Create a signature that reflects your personal style, making each email feel more genuine and engaging.",
+              " Seamlessly incorporate your handwritten signature into any email client. Simply upload or draw your signature, and we'll do the rest.",
+              "Choose from a variety of styles to suit your professional needs or creative preferences.",
+              "Our tool ensures your signature is crisp and clear, maintaining its quality across all devices and platforms.",
+            ],
+          },
+          {
+            head: "Why Choose a Handwritten Signature?",
+            data: [
+              " In an age where digital communication is the norm, a handwritten signature adds a human touch that can leave a lasting impression. ",
+              " It shows attention to detail and a personal approach, which can be especially effective in professional and creative industries.",
+            ],
+          },
+          {
+            head: "Get Started Today",
+            data: [
+              " Ready to make your emails stand out? Use our easy-to-use tool to create your handwritten signature in minutes. ",
+              "Whether you prefer to upload an image of your signature or draw it directly on our platform, the choice is yours.",
+              "Give your emails a unique signature that captures your personality and professionalism. Try it now!",
+            ],
+          },
+        ],
+      },
       image: [
         {
           url: `${template21}`,
@@ -226,6 +341,27 @@ function Listing_updates() {
               className="w-100"
             />
           </div>
+        </div>
+        <div className="pt-5">
+          <>
+            <div className="row">
+              <div className="col-lg-8">
+                <h2>{allData?.data?.heading}</h2>
+                <h6 className="fw-normal mt-3">{allData?.data?.description}</h6>
+                {allData?.data?.listData?.map((item, index) => (
+                  <div key={index} className="my-4">
+                    <h5>{item?.head}</h5>
+                    <ul className="d-flex flex-column gap-2">
+                      {item?.data?.map((signOff, idx) => (
+                        <li key={idx}>{signOff}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <div className="col-lg-4"></div>
+            </div>
+          </>
         </div>
         <div className="py-5 w-100 listing_product">
           <h2 className="mb-4 justify-content-center d-flex w-100">

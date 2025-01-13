@@ -205,7 +205,7 @@ function LandingPage() {
                   Create Professional Email Signatures in Minutes
                 </h5>
                 <h1 className="landingh1">
-                  Design personalized, brand-enhancing <br />
+                  Design personalized, brand-enhancing{"  "}
                   <span className="spanstyle">email Signatures </span>
                   effortlessly—no coding required.
                 </h1>

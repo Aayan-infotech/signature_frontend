@@ -274,7 +274,7 @@ function GuidePage() {
         </div>
 
         <div className="right">
-          <div className="profile-section">
+          <div className="profile-section position-sticky" style={{ top: "110px" }}>
             <h4 className="text-start w-100 d-flex">Related Articles</h4>
             {filterData?.map((item, index) => (
               <div className="profile-card" key={index}>

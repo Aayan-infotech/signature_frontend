@@ -344,8 +344,8 @@ function Listing_updates() {
         </div>
         <div className="pt-5">
           <>
-            <div className="row">
-              <div className="col-lg-8">
+            <div className="row align-items-center">
+              <div className="col-lg-8 m-auto">
                 <h2>{allData?.data?.heading}</h2>
                 <h6 className="fw-normal mt-3">{allData?.data?.description}</h6>
                 {allData?.data?.listData?.map((item, index) => (
@@ -359,7 +359,7 @@ function Listing_updates() {
                   </div>
                 ))}
               </div>
-              <div className="col-lg-4"></div>
+            
             </div>
           </>
         </div>

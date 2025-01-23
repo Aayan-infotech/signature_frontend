@@ -270,8 +270,7 @@ export default function Email_signature() {
     };
     handleFilterData();
   }, [allData]);
-  console.log(location.pathname);
-  console.log(allData);
+
 
   return (
     <>
@@ -349,6 +348,7 @@ export default function Email_signature() {
                   </div>
 
                   <div className="col-lg-4">
+                    <div className="position-sticky" style={{ top: "110px" }}>
                     <h4 className="text-start w-100 d-flex">
                       Related Articles
                     </h4>
@@ -364,6 +364,8 @@ export default function Email_signature() {
                         </div>
                       </div>
                     ))}
+                    </div>
+                   
                   </div>
                 </div>
               </div>
